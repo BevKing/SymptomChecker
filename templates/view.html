@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}View all Symptoms{% endblock %}
+{% block content %}
+    {% for item in values %}
+        <p>Symptom1: {{item.Symptom1}}, Symptom2: {{item.Symptom2}}, Symptom3: {{item.Symptom3}}, 
+            Symptom4: {{item.Symptom4}}, Symptom5: {{item.Symptom5}}, Symptom6: {{item.Symptom6}}
+        </p>
+        
+    {% endfor %}
+{% endblock %}
